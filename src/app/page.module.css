@@ -1,0 +1,55 @@
+/* src/app/page.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  background: linear-gradient(180deg, #770EBB, #BBA5E1); /* Degradado de arriba a abajo */
+  text-align: center;
+  padding: 10px; /* Añade un pequeño padding para el contenido */
+  box-sizing: border-box; /* Asegura que el padding no cause scroll */
+}
+
+.qrContainer {
+  background: white; /* Fondo blanco para el QR */
+  padding: 50px 10px; /* Espacio alrededor del QR */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
+  text-align: center;
+}
+
+.qrContainer p {
+  color: #333; /* Color de texto para las instrucciones */
+  font-size: 20px;
+  padding: 20px 0px;
+}
+
+.loader {
+  width: 300px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #fff; /* Cambiado a blanco */
+  box-shadow: 0 0 0 0 #fff4; /* Cambiado a blanco */
+  animation: l2 1.5s infinite linear;
+  position: relative;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #fff4; /* Cambiado a blanco */
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+
+.loader:after {
+  animation-delay: -1s;
+}
+
+@keyframes l2 {
+  100% {box-shadow: 0 0 0 120px #fff0} /* Cambiado a blanco */
+}

@@ -1,0 +1,117 @@
+/* src/components/Sidebar.module.css */
+.sidebar {
+    width: 230px;
+    height: 100%;
+    background-color: #770EBB; 
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+   /* background: rgb(187,165,225);
+    background: linear-gradient(0deg, rgba(187,165,225,1) 1%, rgba(119,14,187,1) 25%);*/
+  } 
+  
+  .navContainer {
+    flex: 0.91px; /* Ocupa el espacio restante para los módulos */
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 15px 5px; /* Espaciado entre los módulos */
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar nav ul li:not(:last-child) {
+    border-bottom: 1px solid #ffffff; /* Separador entre módulos */
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0px 0px 15px 0px;
+  }
+  
+  .sidebar nav ul li.active a {
+    margin: 0px 0px 15px 0px;
+    background-color: #BBA5E1; /* Color de fondo para la página activa */
+  }
+  
+  .icon {
+    color: #ffffff; /* Iconos blancos */
+    margin-right: 15px;
+  }
+  
+  .text {
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  .logoutContainer {
+    margin-top: auto; /* Mueve la opción de cerrar sesión al final */
+  }
+  
+  .logout {
+    display: flex;
+    align-items: center;
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    background-color: #39045a; /* Color de fondo del botón */
+    padding: 10px;
+    border-radius: 25px;
+    text-align:right;
+    margin: 10px 35px; /* Separador superior para el botón */
+  }  
+
+  .logout:hover{
+    transform: scale(1.1); /* Agranda el botón un 5% */
+  }
+
+  
+.userSection {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la imagen y el texto horizontalmente */
+    flex-direction: column; /* Alinea la imagen y el texto verticalmente */
+    margin-bottom: 20px; /* Espacio adicional debajo del perfil del usuario */
+  }
+  
+  .userImage {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
+    margin-bottom: 15px; /* Espacio entre la imagen y el nombre del usuario */
+    margin-top: 15px;
+  }
+  
+  .spaName {
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold; /* Hace el texto más destacado */
+    text-align: center; /* Centra el texto */
+    padding-top: 7px;
+    font-size: 33px;
+    /*-webkit-text-stroke: 1px black;*/
+  }
+
+  .userName {
+    color: #ffffff; /* Texto blanco */
+    /*font-weight: bold; /* Hace el texto más destacado */
+    text-align: center; /* Centra el texto */
+    font-size: 18px;
+  }
+  

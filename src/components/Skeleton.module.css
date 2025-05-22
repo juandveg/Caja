@@ -1,0 +1,53 @@
+.skeletonCard {
+    background-color: #BBA5E1;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 800px;
+    height: 150px;
+    animation: skeleton-loading 1.5s infinite linear;
+  }  
+
+  .skeletonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px; /* Opcional: Para añadir un poco de espacio arriba */
+  }
+  
+  .skeletonHeader {
+    width: 60%;
+    height: 20px;
+    background-color: #e0e0e0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  
+  .skeletonBody {
+    width: 100%;
+    height: 16px;
+    background-color: #e0e0e0;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  
+  .skeletonFooter {
+    width: 40%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: #BBA5E1;
+    }
+    50% {
+      background-color: #e0e0e0;
+    }
+    100% {
+      background-color: #BBA5E1;
+    }
+  }  

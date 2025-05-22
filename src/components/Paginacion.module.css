@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center; /* Centramos los botones */
+  align-items: center; /* Alineamos verticalmente */
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #770EBB; /* Color morado oscuro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 4px; /* Espacio entre los botones */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #BBA5E1; /* Color morado claro */
+  transform: scale(1.1); /* Agrandamos el botón al pasar el ratón */
+}
+
+.pagination .active {
+  background-color: #BBA5E1; /* Color morado claro para el botón activo */
+  color: #770EBB; /* Texto morado oscuro para el botón activo */
+  border: 1px solid #770EBB;
+}
+
+.pagination .arrowButton {
+  background-color: #770EBB; /* Color morado oscuro */
+  padding: 10px; /* Ajustamos el padding para los botones de flechas */
+  border-radius: 50%; /* Hacemos los botones de flechas redondos */
+}
+
+.pagination .arrowButton:disabled {
+  background-color: #ddd; /* Color gris para botones deshabilitados */
+  cursor: not-allowed; /* Cambiamos el cursor para botones deshabilitados */
+}

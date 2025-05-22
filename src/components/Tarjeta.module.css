@@ -1,0 +1,49 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 15px; /* Aumenta el padding para hacer las tarjetas más grandes */
+    margin: 0.5% 15%; /* Añade margen vertical para que las tarjetas se apilen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    /*width: 100%; /* Asegúrate de que las tarjetas ocupen el 100% del contenedor */
+    /*max-width: 600px; /* Define un ancho máximo para las tarjetas */
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card p {
+    color: #333;
+    margin: 05px 0;
+  }  
+  
+  .card button {
+    background-color: #770EBB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin: -45px 0 0 0;
+    position: relative;
+  }
+  
+  .card button:hover {
+    background-color: #BBA5E1; /* Color morado claro */
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+
+  .turnoId {
+    font-weight: bold;
+    color: #BBA5E1;
+  }
