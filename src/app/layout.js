@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'Caja Turnails',
+  icons: {
+    icon: '/favicon.ico',
+  },
   description: 'App de reacudo Turnails',
 };
 
